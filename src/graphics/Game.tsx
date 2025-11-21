@@ -43,8 +43,8 @@ export function Game() {
 		setCurrentEvent(eventData.currentEvent);
 	}, [eventData]);
 
-	const [showScoreboard, setShowScoreboard] = useState(true);
-	const [showCommentary, setShowCommentary] = useState(true);
+	const [showScoreboard, setShowScoreboard] = useState(false);
+	const [showCommentary, setShowCommentary] = useState(false);
 
 	useListenFor('scoresControl', (value: boolean) => {
 		setShowScoreboard(value);
