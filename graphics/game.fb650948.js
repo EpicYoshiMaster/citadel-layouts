@@ -196,8 +196,8 @@ function Game() {
     }, [
         eventData
     ]);
-    const [showScoreboard, setShowScoreboard] = (0, _react.useState)(true);
-    const [showCommentary, setShowCommentary] = (0, _react.useState)(true);
+    const [showScoreboard, setShowScoreboard] = (0, _react.useState)(false);
+    const [showCommentary, setShowCommentary] = (0, _react.useState)(false);
     (0, _reactHooks.useListenFor)("scoresControl", (value)=>{
         setShowScoreboard(value);
     }, {
