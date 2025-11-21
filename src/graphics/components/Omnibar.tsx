@@ -49,7 +49,7 @@ export const Omnibar: React.FC = () => {
 			</OmnibarItem>
 			<OmnibarItem $show={intermissionData ? intermissionData.showEvent : true}>
 				<EventSection $border={true}>
-					<Logo src='/bundles/chishoals-layouts/images/Chi-Shoals_Logo_Transparent.png' alt="Chi-Shoals Logo" />
+					<Logo width="125px" src='/bundles/citadel-layouts/images/WTDSA_Full_Logo.png' alt="WTDSA Logo" />
 					{currentEvent.number > 0 && (
 					<EventNumberText>
             	    	#{currentEvent.number}
@@ -87,7 +87,7 @@ export const Omnibar: React.FC = () => {
 					})}
 				</CarouselComponent>
 			</CarouselWrapper>
-            <OmnibarElement as="img" src='/bundles/chishoals-layouts/images/SW_Logo.png' alt="SquidWest Logo" />
+            <OmnibarElement as="img" src='/bundles/citadel-layouts/images/SW_Logo.png' alt="SquidWest Logo" />
 		</OmnibarWrapper>
     );
 }

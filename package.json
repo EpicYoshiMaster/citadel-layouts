@@ -1,7 +1,7 @@
 {
-  "name": "chishoals-layouts",
-  "version": "3.0.1",
-  "description": "Bundle with graphics and dashboards for SquidWest's Chi-Shoals Splatoon events.",
+  "name": "citadel-layouts",
+  "version": "1.0.0",
+  "description": "",
   "homepage": "",
   "author": {
     "name": "EpicYoshiMaster",
@@ -17,16 +17,6 @@
   ],
   "nodecg": {
     "compatibleRange": "^2.0.0",
-    "dashboardPanels": [
-      {
-        "name": "ipgsponsor",
-        "title": "I Play Games! Sponsor",
-        "width": 3,
-        "file": "ipg.html",
-        "workspace": "1. Stream Tech",
-        "headerColor": "#525F78"
-      }
-    ],
     "graphics": [
       {
         "file": "intermission.html",

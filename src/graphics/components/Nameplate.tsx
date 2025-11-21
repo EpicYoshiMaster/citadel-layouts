@@ -61,17 +61,17 @@ export const Nameplate: React.FC<NameplateProps> = ({ show, name, pronouns, tag,
 		$animLength={animationLength || 1000}
 		onAnimationEnd={(event) => { onAnimEnd(event.animationName); }}>
 			<Name>
-				<FittedText text={name} font="Splatoon" align="center" maxWidth={580}  />
+				<FittedText text={name} font="Rockwell Bold" align="center" maxWidth={580}  />
 			</Name>
 			<Tag>
-				<FittedText text={tag} font="Splatoon" align="left" maxWidth={500}  />
+				<FittedText text={tag} font="Rockwell Bold" align="left" maxWidth={500}  />
 			</Tag>
 			{pronouns !== "" && (
 			<Pronouns>
 			{
 				pronounsSplit.map((item, index) => {
 					return <PronounsText key={index}>
-						<FittedText text={item} font="Splatoon" align="center" maxWidth={75}  />
+						<FittedText text={item} font="Rockwell Bold" align="center" maxWidth={75}  />
 					</PronounsText>;
 				})
 			}
@@ -138,7 +138,7 @@ const NameplateBox = styled.div<{ $show: boolean, $visible: boolean, $active: bo
 	justify-content: space-evenly;
 	text-align: center;
 
-	background-image: url('/bundles/chishoals-layouts/images/Chi_Banner.png');
+	background-image: url('/bundles/citadel-layouts/images/Chi_Banner.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	color: var(--commentary-text);
@@ -176,7 +176,7 @@ const Pronouns = styled.div`
 
 	width: 167px;
 	height: 135px;
-	background-image: url('/bundles/chishoals-layouts/images/Splatter.png');
+	background-image: url('/bundles/citadel-layouts/images/Splatter.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	color: var(--commentary-pronouns);

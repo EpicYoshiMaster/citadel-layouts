@@ -43,8 +43,8 @@ export function Game() {
 		setCurrentEvent(eventData.currentEvent);
 	}, [eventData]);
 
-	const [showScoreboard, setShowScoreboard] = useState(false);
-	const [showCommentary, setShowCommentary] = useState(false);
+	const [showScoreboard, setShowScoreboard] = useState(true);
+	const [showCommentary, setShowCommentary] = useState(true);
 
 	useListenFor('scoresControl', (value: boolean) => {
 		setShowScoreboard(value);
@@ -59,7 +59,7 @@ export function Game() {
 			<Content>
 				<Scoreboard $show={showScoreboard}>
 					<InfoBox>
-						<FittedText text={`${currentEvent.name} ${currentEvent.number > 0 ? '#' + currentEvent.number  : ''}${matchData.matchInfo !== "" ? " - " + matchData.matchInfo : ""}`} font="Splatoon" align="left" maxWidth={FullWidth} />
+						<FittedText text={`${currentEvent.name} ${currentEvent.number > 0 ? '#' + currentEvent.number  : ''}${matchData.matchInfo !== "" ? " - " + matchData.matchInfo : ""}`} font="Rockwell Bold" align="left" maxWidth={FullWidth} />
 					</InfoBox>
 					<GameScoreInfoBox 
 						color={!matchData.swapColor ? matchData.matchColor.teamA : matchData.matchColor.teamB} 
@@ -78,7 +78,7 @@ export function Game() {
 				</Scoreboard>
 				<Commentators $show={showCommentary}>
 					<InfoBox>
-						<FittedText text="Commentary" font="Splatoon" align="left" maxWidth={FullWidth} />
+						<FittedText text="Commentary" font="Rockwell Bold" align="left" maxWidth={FullWidth} />
 					</InfoBox>
 					{commentatorList && commentatorList.map((commentator, index) => (
 						<GameCommentatorInfoBox

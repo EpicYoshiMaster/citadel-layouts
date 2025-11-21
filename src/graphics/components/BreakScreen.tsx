@@ -30,7 +30,7 @@ export const BreakScreen: React.FC<BreakScreenProps> = ({ message }) => {
 			<Background />
 			<Content>
 				<LogoArea>
-					<SWLogo src="/bundles/chishoals-layouts/images/SW_Logo.png" alt="SquidWest Logo" />
+					<SWLogo src="/bundles/citadel-layouts/images/SW_Logo.png" alt="SquidWest Logo" />
 				</LogoArea>
 				<TextArea>
 					<CarouselWrapper>

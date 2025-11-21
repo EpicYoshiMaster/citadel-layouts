@@ -63,9 +63,9 @@ export function Credits() {
                 <CreditsRow key={index}>
                     <HeaderText>Stream Overlays and Design</HeaderText>
                     <YoshiRow>
-                        <img src="/bundles/chishoals-layouts/images/misc/harmonypixel.gif" alt="Harmony Pixel" />
+                        <img src="/bundles/citadel-layouts/images/misc/harmonypixel.gif" alt="Harmony Pixel" />
                         <YoshiSpan><YoshiText>EpicYoshiMaster</YoshiText></YoshiSpan>
-                        <img src="/bundles/chishoals-layouts/images/misc/harmonypixel.gif" alt="Harmony Pixel" />
+                        <img src="/bundles/citadel-layouts/images/misc/harmonypixel.gif" alt="Harmony Pixel" />
                     </YoshiRow>
                     <Divider />
                     <NameText>Need stream overlays for your event?</NameText>
@@ -113,10 +113,10 @@ export function Credits() {
                                         <Logo src={getImagePath(creditsRow.imageBundle, creditsRow.image)} />
                                     </LogoRow>
                                 )}
-                               <HeaderText><FittedText text={creditsRow.name} align="center" font="Splatoon" maxWidth={1900} /></HeaderText>
+                               <HeaderText><FittedText text={creditsRow.name} align="center" font="Rockwell Bold" maxWidth={1900} /></HeaderText>
                                <NamesList $namesPerColumn={namesPerColumn(creditsRow.items.length)}>
                                 {creditsRow.items.map((name, index, array) => (
-                                    <NameText key={index}><FittedText text={name} align="center" font="Splatoon" maxWidth={nameSpace(namesWidth, array.length)} /></NameText>
+                                    <NameText key={index}><FittedText text={name} align="center" font="Rockwell Bold" maxWidth={nameSpace(namesWidth, array.length)} /></NameText>
                                 ))}
                                </NamesList>
                             </CreditsRow>

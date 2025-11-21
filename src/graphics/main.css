@@ -1,29 +1,43 @@
 :root {
 	/* Break Screen */
 
-	--break-main-text: #23eb00;
+	/* 
+	Theme Colors:
+	#4d1558
+	#701e80
+	#bd2dd4
+	#d47ee2
+	#b5731f
+	#daa34e
+	#ffd37d
+	#ffffff
+	*/
+
+	--bg-color: #4d1558;
+
+	--break-main-text: #bd2dd4;
 	--break-main-outline: #ffffff;
 
-	--break-socials-text: #f10059;
+	--break-socials-text: #daa34e;
 	--break-socials-outline: #ffffff;
 
 	/* Intermission & Omnibar */
 
 	--feed-large-color: #eae6f3;
-	--feed-large-border: #f04888;
+	--feed-large-border: #daa34e;
 
 	--feed-small-color: #eae6f3;
-	--feed-small-border: #f04888;
+	--feed-small-border: #bd2dd4;
 
-	--omnibar-color: #f04888;
+	--omnibar-color: #b5731f;
 	--omnibar-text: #ffffff;
-	--omnibar-divider: #eae6f3;
+	--omnibar-divider: #ffd37d;
 
-	--teams-border: #f04888;
-	--teams-text: #f04888;
-	--teams-inner: #eae6f3;
+	--teams-border: #bd2dd4;
+	--teams-text: #ffffff;
+	--teams-inner: #4d1558;
 	--teams-score-text: #eae6f3;
-	--teams-score-inner: #f04888;
+	--teams-score-inner: #701e80;
 
 	/* Commentary */ 
 
@@ -35,15 +49,15 @@
 
 	/* Game */
 	--game-title-text: #eae6f3;
-	--game-title-bg: #f04888;
+	--game-title-bg: #701e80;
 
-	--game-main-text: #f04888;
+	--game-main-text: #daa34e;
 	--game-main-bg: #eae6f3;
 
 	--game-sub-text: #eae6f3;
-	--game-sub-bg: #f04888;
+	--game-sub-bg: #701e80;
 
-	--game-border: #b31451;
+	--game-border: #bd2dd4;
 
 	/* Credits */
 
@@ -52,12 +66,17 @@
 }
 
 @font-face {
-	font-family: Splatoon;
-	src: url('../../fonts/project_paintball.otf');
+	font-family: 'Gill Sans';
+	src: url('../../fonts/Gill_Sans_MT.TTF');
+}
+
+@font-face {
+	font-family: 'Rockwell Bold';
+	src: url('../../fonts/Rockwell_Bold.TTF');
 }
 
 body {
-  font-family: Splatoon;
+  font-family: 'Rockwell Bold';
   margin: 0;
 }
 

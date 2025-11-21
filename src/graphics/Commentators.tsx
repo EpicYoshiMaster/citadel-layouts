@@ -70,7 +70,7 @@ export function Commentators() {
 	}, [setShowSponsor]);
 
 	useListenFor('commsControl', onCommsControl, { bundle: 'squidwest-layout-controls' });
-	useListenFor('ipgControl', onIpgControl, { bundle: 'chishoals-layouts' });
+	useListenFor('ipgControl', onIpgControl, { bundle: 'citadel-layouts' });
 
 	useEffect(() => {
 		if(settings && loaded === LoadState.LS_Loaded) {
@@ -85,7 +85,7 @@ export function Commentators() {
 	return (
 		<StyledCommentators>
 			<Content>
-				<IpgLogo $show={showSponsor} src="/bundles/chishoals-layouts/images/I_Play_Games.png" alt="I Play Games Logo" />
+				<IpgLogo $show={showSponsor} src="/bundles/citadel-layouts/images/I_Play_Games.png" alt="I Play Games Logo" />
 				<LowerThirds>
 					{commentatorList && commentatorList.map((commentator, index) => (
 						<NameplateWrapper key={index}>
