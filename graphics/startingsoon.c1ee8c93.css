@@ -1,0 +1,56 @@
+:root {
+  --bg-color: #4d1558;
+  --break-main-text: #bd2dd4;
+  --break-main-outline: #fff;
+  --break-socials-text: #daa34e;
+  --break-socials-outline: #fff;
+  --feed-large-color: #eae6f3;
+  --feed-large-border: #daa34e;
+  --feed-small-color: #eae6f3;
+  --feed-small-border: #bd2dd4;
+  --omnibar-color: #b5731f;
+  --omnibar-text: #fff;
+  --omnibar-divider: #ffd37d;
+  --teams-border: #bd2dd4;
+  --teams-text: #fff;
+  --teams-inner: #4d1558;
+  --teams-score-text: #eae6f3;
+  --teams-score-inner: #701e80;
+  --commentary-text: #a72456;
+  --commentary-tag: #a72456;
+  --commentary-pronouns: #eae6f3;
+  --game-title-text: #eae6f3;
+  --game-title-bg: #701e80;
+  --game-main-text: #daa34e;
+  --game-main-bg: #eae6f3;
+  --game-sub-text: #eae6f3;
+  --game-sub-bg: #701e80;
+  --game-border: #bd2dd4;
+  --credits-text: #fff;
+  --credits-bg: #000;
+}
+
+@font-face {
+  font-family: Gill Sans;
+  src: url("Gill_Sans_MT.caae48d3.TTF");
+}
+
+@font-face {
+  font-family: Rockwell Bold;
+  src: url("Rockwell_Bold.8890c0c3.TTF");
+}
+
+body {
+  margin: 0;
+  font-family: Rockwell Bold;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=startingsoon.c1ee8c93.css.map */
